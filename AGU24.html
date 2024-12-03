@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGU24</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .image-container {
+            width: 100%;
+            max-height: 30%;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .image-container img {
+            display: flex;
+            max-width: 90%; /* Makes the image scale to fit smaller screens */
+            height: auto;
+            border: 30px solid #206eb8;
+            justify-content: center;
+        }
+
+        .links-container {
+            width: 100%;
+            max-width: 600px; /* Keeps the links container from stretching too wide */
+            display: flex;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center; /* Centers the links horizontally */
+            text-align: center;
+            width: 100%;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #102C53;
+            font-size: 1.5em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .links div {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .image-container {
+                max-height: 20%;
+                padding: 10px;
+            }
+
+            .links {
+                gap: 30px;
+            }
+
+            .link {
+                font-size: 1.2em;
+            }
+
+            .image-container img {
+                max-width: 100%; /* Ensures the image fits the screen on small devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img id="agu24_logo" alt="AGU24 Logo" src="media/AGU24_Logo.png">
+</div>
+
+<div style="margin-bottom: 30px">
+    <h2>Multi-Objective Forecast-Informed Reservoir Operation at different time scales using a Neuro-Evolutionary
+        algorithm</h2>
+    <h3 style="font-weight: normal;">Davide Spinelli, Marta Zaniolo, Matteo Giuliani, Andrea Castelletti</h3>
+</div>
+<div class="links-container">
+    <div class="links">
+        <a href="https://eppro01.ativ.me/web/page.php?page=urn&project=AGU24&urn=urn:eventpilot:all:media:id:lnp1699819-183763"
+           target="_blank" class="link">AGU Digital Poster</a>
+        <a href="/media/AGU24_Printable_Poster.pdf" target="_blank" class="link">Printable Poster</a>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10591306" target="_blank" class="link">
+            Paper on the use of Ensemble Forecasts on the same system (with Cross-Validation)</a>
+        <div><a href="https://www.linkedin.com/in/d-spinelli/" target="_blank" class="link">LinkedIn</a>
+            <div class="link"> /</div>
+            <a href="https://github.com/cadoraghese" target="_blank" class="link">GitHub</a>
+        </div>
+        <a href="mailto:davide.spinelli@polimi.it" target="_blank" class="link">Send me an email!</a>
+    </div>
+</div>
+
+</body>
+</html>
